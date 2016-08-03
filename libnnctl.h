@@ -5,6 +5,17 @@
 #include <inttypes.h>
 #include <nanomsg/nn.h>
 
+/*
+no header file and some macro define value
+
+1\#include <nanomsg/nn.h> 
+where is this file? 
+
+2\ libnnctl.c:91:38: error: 'NN_MSG' undeclared (first use in this function)
+   len = nn_recv(nn_rep_socket, &msg, NN_MSG, 0);
+                                      ^
+*/
+
 #if defined __cplusplus
 extern "C" {
 #endif
